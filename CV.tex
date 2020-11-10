@@ -1,0 +1,224 @@
+%----------------------------------------------------------------------------------------
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Rishi Shah 
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+\usepackage[left=0.8in,top=0.6in,right=0.8in,bottom=0.6in]{geometry} % Document margins
+
+\usepackage[french, english]{babel} % multi-language support
+\usepackage{iflang}
+\usepackage{hyperref}
+\usepackage{graphicx}
+
+\newcommand{\translation}[2]{\IfLanguageName{#1}{#2}{}}
+\newcommand{\en}[1]{\translation{english}{#1}}
+\newcommand{\fr}[1]{\translation{french}{#1}}
+\newcommand{\lang}{english} % CONTROL OUTPUT LANGUAGE
+
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+\long\def\/*#1*/{} %% allows multiline comments
+%\newcommand{\babel}[2]{\IfLanguageName{english}{#1}{#2}}
+
+\name{Maxence Giraud} % Your name
+\address{maxence.giraud.etu@univ-lille.fr \\  \href{https://github.com/MaxenceGiraud}{\includegraphics[width=0.35cm]{github-logo.pdf}} } % Your address
+\address{ Master 2 Data Science / Machine Learning} % phone number and email
+
+\begin{document}
+\expandafter\selectlanguage\expandafter{\lang}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+    \begin{rSubsection}{Master DATA Science - Université de Lille}{\em 2019 - 2021}
+        {\en{Master Research in partnership with the University of Lille, Centrale Lille and IMT Lille Douai} \fr{Master Recherche en partenariat avec L'Université de Lille, Centrale Lille et IMT Lille Douai}}
+
+        \en{
+        \item Machine Learning/Deep Learning, Statistics, Probabilities, Optimization, Signal Processing, Linear Algebra
+        \item Sequential Decision Making (MAB, Reinforcement learning), Bayesian learning, graph based ML, Privacy ML 
+        }
+        
+        \fr{
+        \item Machine Learning/Deep Learning, Statistiques, Probabilités, Optimisation, traitement du signal, Algèbre linéaire
+        \item Cours en anglais}
+    \end{rSubsection}
+
+
+    \begin{rSubsection}{IMT Lille Douai}{\em 2014 - 2019}
+        {\en{Engineering School - Computer Science}\fr{Ecole d'ingénieur}}{}
+        \item \en{Preparatory classes + Engineering path in Computer Science / Networking / Telecommunication. } \fr{Classe préparatoires intégrées et parcours Ingénieur Informatique / Réseaux/ Telecommunication.}
+    \end{rSubsection}
+
+\end{rSection}
+
+%--------------------------------------------------------------------------------
+%    Projects And SeminarsFirst approach to academic research.
+%-----------------------------------------------------------------------------------------------
+\begin{rSection}{\en{Research Projects} \fr{Projets Recherches}}
+
+    % {\bf Research Project M2 - University of Lille, team Sigma (Cristal lab) }\hfill {\em 2020-2021}
+    % \en{
+    %     \\ High-dimensional clustering algorithm
+    %     \\ .}
+    % \fr{
+    %     \\ High-dimensional clustering algorithm 
+    %     \\ .}
+
+    {\bf Research Project M1 - University of Lille, team Biocomputing (Cristal lab) }\hfill {\em 2019-2020}
+    \en{
+        \\ Mathematical Modeling of glucose in cells
+        \\ Model made in python (using simpy + scipy), using several differential equations.
+        \\ First approach to academic research.}
+    \fr{
+        \\  Modelisation mathématique du glucose dans les cellules epithelial enterocytes
+        \\ Modèle développé en python (using simpy + scipy), composé principalement d'équations différentielles.
+        \\ Première approche à la recherche académique.}
+
+\end{rSection}
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{\en{Work Experience}\fr{Expérience}}
+
+
+    \begin{rSubsection}{University of Lille - Team Sigma (Cristal lab)}{\em April-\en{July}\fr{Juil} 2020}{\en{Research Intern} \fr{Chercheur Stagiaire}}{}
+        \en{
+            \item Simulate in real time Battery pack of electrified vehicles using Machine Learning models.
+            \item Overview of the state of the arts of ML/DL models (SVM, RandomForest,GradientBoosting,MLP,RNN ...)
+            \item Optimization of models, Computing confidence intervals, Studies of the models' generalisation.}
+        \fr{
+            \item Simuler en temps des batteries de voitures electriques avec des modèles de Machine Learning.
+            \item Effectuer un état de l'art des algorithms de ML/DL (SVM,RandomForest, GradientBoosting, MLP, RNN ...).
+            \item Optimisation des modèles, Calculs d'intervales de confiance, Test de généralisation des modèles.}
+    \end{rSubsection}
+
+    \begin{rSubsection}{Orange Cyberdéfense, Lesquin}{\em Jan-\en{July}\fr{Juil} 2019}{\en{Intern Security Engineer} \fr{Stagiaire Ingénieur Sécurité}}{}
+        \en{
+            \item Automation of a FortiGate Firewall park deployment using FortiManager's API.
+            \item Python Scripts Programming}
+        \fr{
+            \item Automatisation du déploiement d'un parc de  Firewall Fortinet via l’API de FortiManager.
+            \item Programmation de script python.
+        }
+    \end{rSubsection}
+
+    \begin{rSubsection}{Coreye, Villeneuve D'Ascq}{\em Sept 2018 - Jan 2019}{\en{Intern Developper} \fr{Développeur stagiaire}}{}
+        \en{
+            \item Automation of Fortinet Firewall deployment using its API in Ruby.
+            \item Firewalls Migration, Remplacement of  monitoring networking tools.}
+        \fr{
+            \item Automatisation du déploiement de Firewall Fortinet via l’API.
+            \item Migration de Firewalls. Remplacement des sondes de supervisions.}
+    \end{rSubsection}
+    
+
+    \begin{rSubsection}{Hochschule Für Telekomunication, Leipzig - Germany}{\em \en{April - July}\fr{Avril - Juil} 2017}{\en{Intern} \fr{Stagiaire}}{}
+        \en{
+            \item Analysis and comparaison of 3 virtualisation systems:
+            Cloudstack / Openstack \\ / Oracle VM server.}
+        \fr{
+            \item Analyse et comparaison de 3 systèmes de virtualisation : Cloudstack / Openstack / Oracle VM server. Et préconisation d’utilisation en fonction des contextes.
+        }
+
+    \end{rSubsection}
+
+    %---------- old internships ----------------------------------------------------------
+    % \begin{rSubsection}{Vetoch, Villeneuve D'Ascq - France}{\em Sept 2017- Jan2018 }{\en{ Marketing Intern} \fr{Stagiaire Marketing}}{}
+    %     \en{
+    %         \item Mise en pratique marketing et communication.
+    %         \item Création d’un site Web et d’un Extranet (Wordpress).
+    %         \item Traduction de nombreux documents en anglais.}
+    %     \fr{
+    %         \item Mise en pratique marketing et communication.
+    %         \item Création d’un site Web et d’un Extranet (Wordpress).
+    %         \item Traduction de nombreux documents en anglais.
+    %     }
+    % \end{rSubsection}
+
+    % \begin{rSubsection}{Supermarché Match - La Madeleine France}{\em \en{Feb - April}\fr{Février - Avril} 2015}{\en{First experience Internship} \fr{Stage Découverte de l'entreprise}}{}
+    %     \en{
+    %         \item Assistance aux contrôleurs de gestion.
+    %         \item Automatisation de process avec Excel (Développement de
+    %         macro).}
+    %     \fr{
+    %         \item Assistance aux contrôleurs de gestion.
+    %         \item Automatisation de process avec Excel (Développement de
+    %         macro).
+    %     }
+    % \end{rSubsection}
+    %------------------------------------------------------------------------------------
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{\en{Technical Strengths} \fr{Compétences techniques}}
+
+    \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+        \en{Mathematics                                          & Probabilities, Statistics, Linear Algebra \\}
+        \fr{Mathématiques                                        & Probabilités, Statistiques, Algèbre linéaire.\\}
+        \en{Programming Languagues} \fr{Languages programmation} & Python (Numpy, scikit-learn, tensorflow,scipy), C, R, Ruby                                                     \\
+        Machine Learning                                         & Linear regression (LS), LDA/QDA/FDA, SVM, dimension reduction (PCA)    \\ \emph{(\en{Theory and practice}\fr{Théorie et pratique})} & Unsupervised learning (k-means/medoids), Decision trees (Random Forest) \\
+                                                                 & Deep Learning (MLP,CNN,RNN,GAN,Autoencoder/VAE)                                  \\
+        \en{Other Tools} \fr{Autres Outils}                                   & Latex, Beamer                                                          \\
+    \end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Languages}
+
+    \begin{tabular}{@{} >{\bfseries}l @{\hspace{4ex}} l @{\hspace{6ex}} @{} >{\bfseries}l @{\hspace{4ex}} l @{\hspace{6ex}} @{} >{\bfseries}l @{\hspace{4ex}} l}
+        \en{
+        French   & Mother Tongue & English  & Bilingual & German  & Intermediate \\}
+        \fr{
+        Français & Langue maternelle  & Anglais  & Bilingue & Allemand & Intermédaire \\}
+    \end{tabular}
+
+\end{rSection}
+
+
+
+%----------------------------------------------------------------------------------------
+%	Hobbies/Interests SECTION
+%----------------------------------------------------------------------------------------
+
+% \begin{rSection}{Hobbies and Other interests}
+% Handball, Swimming, Astronomy, Physics.
+% \end{rSection}
+
+\/*  %% Commented
+
+*/
+
+\end{document}
+
+
